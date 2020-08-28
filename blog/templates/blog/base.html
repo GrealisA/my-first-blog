@@ -1,12 +1,11 @@
 {% load static %}
-<html>
+<html class="back">
   <div class="back">
     <head>
         <title>Alfred Grealis' blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
     </head>
 
@@ -20,7 +19,7 @@
 
           <div class="pages">
             <a href="/"><button class="button">Posts</button></a>
-            <a href="{% url 'cool_work' %}"><button class="button">Cool Works</button></a>
+            <a href="{% url 'cool_work' %}"><button class="button">Relaxation corner</button></a>
           </div>
         </header>
 
@@ -30,6 +29,7 @@
             {% endblock %}
           </div>
         </div>
+      </div>
     </body>
   </div>
 </html>

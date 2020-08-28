@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'girl';
-    src: url('/static/fonts/GirlOnARoof.ttf') format('truetype');
+    font-family: 'flower';
+    src: url('/static/fonts/IndieFlower.ttf') format('truetype');
 }
 
 .back {
-    background-image: linear-gradient(#ffe0e0, #E8E0D8);
+    background-image: linear-gradient(#ffeded, #e5dcd3);
+    background-size: 100% 100%;
 }
 
 .content-holder {
@@ -29,8 +30,8 @@
   width: 50%;
   float: left;
   height: 40px;
-  font-family: 'girl';
-  background-color: #5c31a0;
+  font-family: 'flower';
+  background-color: #99418d;
   transition: background-color 0.5s;
   color: white;
   border: none;
@@ -50,7 +51,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'girl';
+    font-family: 'flower';
     color: #880088;
 }
 
@@ -89,6 +90,7 @@ hr {
   align: center;
   border: 0px;
   background-color: rgba(255, 255, 255, 0.4);
+  padding: 5% 0px 5% 0px;
 }
 
 .row {
@@ -96,7 +98,12 @@ hr {
   margin-right: auto;
 }
 
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 
 .post {
     margin-left: auto;
