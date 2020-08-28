@@ -91,6 +91,7 @@ hr {
 .content-container {
   margin-left: auto;
   margin-right: auto;
+  min-height: 90%;
   width: 40%;
   align: center;
   border: 0px;
@@ -129,7 +130,7 @@ hr {
 }
 
 .post-link:hover {
-    background-color: rgba(158, 169, 229, 0.8);
+    background-color: rgba(158, 169, 229, 0.6);
 }
 
 .post-link a:hover {
