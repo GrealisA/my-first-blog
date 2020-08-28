@@ -1,5 +1,6 @@
 {% load static %}
 <html>
+  <div class="back">
     <head>
         <title>Alfred Grealis' blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -8,27 +9,27 @@
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
     </head>
+
     <body>
-      <div class="page-header">
-        {% if user.is_authenticated %}
-          <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        {% endif %}
-        <h1>Alfred Grealis' Blog</h1>
-        <div id="parent">
-          <ul id="pages">
-              <li><a href="/">Posts</a></li>
-              <li><a href="{% url 'cool_work' %}">Cool Works</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="content container">
-        <div class="row">
-          <div class="col-md-8">
+      <div class="content-holder">
+        <header class="page-header">
+          {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+          {% endif %}
+          <h1><a href="/">Alfred Grealis' Blog</a></h1>
+
+          <div class="pages">
+            <a href="/"><button class="button">Posts</button></a>
+            <a href="{% url 'cool_work' %}"><button class="button">Cool Works</button></a>
+          </div>
+        </header>
+
+        <div class="content-container">
+          <div class="row">
             {% block content %}
             {% endblock %}
           </div>
         </div>
-      </div>
-      <img src="https://www.logolynx.com/images/logolynx/3e/3e27fa2dc8789aaa342b2f16f128a6ed.png">
     </body>
+  </div>
 </html>

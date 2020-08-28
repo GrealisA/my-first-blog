@@ -3,39 +3,58 @@
     src: url('/static/fonts/GirlOnARoof.ttf') format('truetype');
 }
 
-body {
-    padding-left: 0px;
+.back {
+    background-image: linear-gradient(#ffe0e0, #E8E0D8);
+}
+
+.content-holder {
+    background-image: url("https://data.whicdn.com/images/312617426/original.gif");
+    background-size: 1280px, 851px;
+    background-repeat: no-repeat;
+    background-position: 50% 200px;
 }
 
 .page-header {
-    background-color: #7242bf;
     margin-top: 0;
     padding: 20px 20px 20px 20px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #c6417f;
     font-size: 36pt;
     text-decoration: none;
 }
 
-.page-header ul {
-  text-align: center;
-  margin-left: 50%;
+.page-header button {
+  width: 50%;
+  float: left;
+  height: 40px;
+  font-family: 'girl';
+  background-color: #5c31a0;
+  transition: background-color 0.5s;
+  color: white;
+  border: none;
 }
 
-.content {
-    margin-left: 50%;
+.page-header button:hover {
+  background-color: #ffc4f9;
+  color: black;
+}
+
+/* + */
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
 }
 
 h1, h2, h3, h4 {
     font-family: 'girl';
-    color: #000000;
+    color: #880088;
 }
 
-.post.text {
-    color: #000000;
-}
+
 hr {
   display: block;
   margin-top: 0.5em;
@@ -46,12 +65,13 @@ hr {
   border-width: 1px;
 }
 
-div {
-  text-align: left;
-}
 
 .date {
     color: #828282;
+}
+
+.post-text {
+    color: #000000;
 }
 
 .save {
@@ -62,28 +82,35 @@ div {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+.content-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  align: center;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 .post {
-    border-radius: 100px;
-    transition: border-radius 0.5s;
-    width: 100%
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    transition: background-color 0.5s;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px 10px 10px;
 }
 
 .post:hover {
     background-color: #9ea9e5;
-    border-radius: 200px;
 }
 
 .post a:hover {
-  text-decoration: none;
-}
-
-.post h2 a:visited {
-    color: #440000;
+    text-decoration: none;
 }
