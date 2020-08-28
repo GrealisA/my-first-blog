@@ -36,6 +36,7 @@
   float: left;
   height: 40px;
   font-family: 'girl';
+  font-size: 20px;
   background-color: #99418d;
   transition: background-color 0.5s;
   color: white;
