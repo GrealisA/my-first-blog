@@ -19,6 +19,10 @@ body {
     text-decoration: none;
 }
 
+.page-header li {
+  text-align: center;
+}
+
 .content {
     margin-left: 5%;
 }

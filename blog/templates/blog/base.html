@@ -13,8 +13,12 @@
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
         <h1>Alfred Grealis' Blog</h1>
-        <h2><a href="/">Posts</a></h2>
-        <h2><a href="{% url 'cool_work' %}">Cool Works</a><h2>
+        <div id="parent">
+          <ul id="pages">
+              <li><a href="/">Posts</a></li>
+              <li><a href="{% url 'cool_work' %}">Cool Works</a></li>
+          </ul>
+        </div>
       </div>
       <div class="content container">
         <div class="row">
