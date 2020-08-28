@@ -3,6 +3,11 @@
     src: url('/static/fonts/IndieFlower.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'girl';
+    src: url('/static/fonts/GirlOnARoof.ttf') format('truetype');
+}
+
 .back {
     background-image: linear-gradient(#ffeded, #e5dcd3);
     background-size: 100% 100%;
@@ -30,7 +35,7 @@
   width: 50%;
   float: left;
   height: 40px;
-  font-family: 'flower';
+  font-family: 'girl';
   background-color: #99418d;
   transition: background-color 0.5s;
   color: white;
@@ -51,7 +56,7 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: 'flower';
+    font-family: 'girl';
     color: #880088;
 }
 
@@ -114,10 +119,19 @@ hr {
     padding: 10px 10px 10px 10px;
 }
 
-.post:hover {
-    background-color: #9ea9e5;
+.post-link {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    transition: background-color 0.5s;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px 10px 10px;
 }
 
-.post a:hover {
+.post-link:hover {
+    background-color: rgba(158, 169, 229, 0.8);
+}
+
+.post-link a:hover {
     text-decoration: none;
 }
